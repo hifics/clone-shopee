@@ -26,6 +26,12 @@
     font-weight: 350;
 }
 
+.navbar__list-item,
+.navbar__list-link:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .navbar__list-link--border {
     border-right: 2px solid rgba(255, 255, 255, 0.22);
     padding-right: 7px;
