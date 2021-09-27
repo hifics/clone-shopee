@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Shopee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/font/FortAwesome-Font-Awesome-7d3d774/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
@@ -17,19 +18,45 @@
             <div class="grid">
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li class="navbar__list-item navbar__list-link--border">
+                        <li class="navbar__list-item navbar__list-link--border navbar__list-item--show-qrcode ">
                             <a href="" class="navbar__list-link ">Vào Cửa Hàng Trên Ứng Dụng Clone Shopee</a>
+                            <!-- QR Code section -->
+                            <div class="navbar_qrcode">
+                                <img class="navbar_qrcode-img" src="./asset/images/qr-code.png" alt="qr-code">
+                                <div class="navbar_qrcode-app">
+                                    <a href="" class="navbar_qrcode-link">
+                                        <img src="./asset/images/apple-store.png" class="navbar_qrcode-logo" alt="apple-store">
+                                    </a>
+                                    <a href="" class="navbar_qrcode-link">
+                                        <img src="./asset/images/ch-play.png" class="navbar_qrcode-logo" alt="ch-play">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="navbar__list-item">
-                            <a href="" class="navbar__list-link">Kết Nối</a>
+                            <a href="" class="navbar__list-link">
+                                Kết Nối
+                                <a href="" class="navbar__list-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="navbar__list-icon">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </a>
                         </li>
                     </ul>
                     <ul class="navbar__list">
                         <li class="navbar__list-item">
-                            <a href="" class="navbar__list-link">Thông Báo</a>
+                            <a href="" class="navbar__list-link">
+                                <i class="fas fa-bell"></i>
+                                Thông Báo
+                            </a>
                         </li>
                         <li class="navbar__list-item">
-                            <a href="" class="navbar__list-link">Trợ Giúp</a>
+                            <a href="" class="navbar__list-link navbar__list-icon">
+                                <i class="far fa-question-circle "></i>
+                                Trợ Giúp
+                            </a>
                         </li>
                         <li class="navbar__list-item">
                             <a href="" class="navbar__list-link navbar__list-link--strong navbar__list-link--border">Đăng Nhập</a>

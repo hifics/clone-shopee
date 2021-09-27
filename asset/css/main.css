@@ -14,6 +14,8 @@
 
 .navbar__list-item {
     margin: 0 8px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 
@@ -26,11 +28,18 @@
     font-weight: 350;
 }
 
-.navbar__list-item,
+/* .navbar__list-item:hover, */
+.navbar__list-icon:hover,
 .navbar__list-link:hover {
     cursor: pointer;
     opacity: 0.8;
 }
+
+.navbar__list-item--show-qrcode:hover .navbar_qrcode {
+    display: block;
+} 
+
+
 
 .navbar__list-link--border {
     border-right: 2px solid rgba(255, 255, 255, 0.22);
@@ -39,4 +48,41 @@
 
 .navbar__list-link--strong {
     font-weight: 500;
+}
+
+.navbar__list-icon {
+    font-size: 1.6rem;
+    color: var(--white-color); 
+}
+
+/* QR Code Section */
+
+.navbar_qrcode{
+    position: absolute;
+    display: none;
+    width: 186px;
+    background-color: var(--white-color);
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+
+.navbar_qrcode-img{
+    width: 100%;
+}
+
+.navbar_qrcode-app{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navbar_qrcode-logo{
+    flex: 1;    
+    height: 16px;
+}
+
+.navbar_qrcode-link {
 }
